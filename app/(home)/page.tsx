@@ -1,6 +1,8 @@
 import { format } from "date-fns";
-import Header from "../_components/header";
 import { ptBR } from "date-fns/locale";
+
+import Search from "./_components/search";
+import Header from "../_components/header";
 
 const Home = () => {
   return (
@@ -14,6 +16,10 @@ const Home = () => {
             locale: ptBR,
           })}
         </p>
+      </div>
+
+      <div className="px-5 mt-6">
+        <Search />
       </div>
     </div>
   );
